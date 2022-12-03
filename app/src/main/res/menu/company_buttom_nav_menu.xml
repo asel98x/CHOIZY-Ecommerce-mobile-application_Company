@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="@string/branch"
+        android:icon="@drawable/ic_brunch"
+        android:id="@+id/nav_branch"
+        app:cnb_iconColor="@color/blue"
+        app:cnb_textColor="@color/blue"
+        app:cnb_backgroundColor="@color/pri"
+        />
+
+    <item
+        android:title="@string/advertising"
+        android:icon="@drawable/ic_advertising"
+        android:id="@+id/nav_advertising"
+        app:cnb_iconColor="@color/blue"
+        app:cnb_textColor="@color/blue"
+        app:cnb_backgroundColor="@color/pri"
+        />
+
+    <item
+        android:title="@string/offers"
+        android:icon="@drawable/ic_offer"
+        android:id="@+id/nav_offers"
+        app:cnb_iconColor="@color/blue"
+        app:cnb_textColor="@color/blue"
+        app:cnb_backgroundColor="@color/pri"
+        />
+    <item
+        android:title="@string/profile"
+        android:icon="@drawable/ic_profile"
+        android:id="@+id/nav_profile"
+        app:cnb_iconColor="@color/blue"
+        app:cnb_textColor="@color/blue"
+        app:cnb_backgroundColor="@color/pri"
+        />
+
+</menu>

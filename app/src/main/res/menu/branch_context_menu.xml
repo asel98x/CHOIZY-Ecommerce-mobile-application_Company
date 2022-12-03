@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/MenuUpdateB_ChangePass"
+        android:title="@string/change_password"
+        android:icon="@drawable/ic_password_edit2"
+        android:iconTint="@color/black"
+        />
+
+    <item android:id="@+id/MenuUpdateB_Delete"
+        android:title="@string/delete"
+        android:icon="@drawable/ic_delete"
+        android:iconTint="@color/black"
+        />
+
+
+
+</menu>

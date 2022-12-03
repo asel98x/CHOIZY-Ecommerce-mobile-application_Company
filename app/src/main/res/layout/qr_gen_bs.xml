@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/qrGen_GenIMG"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@tools:sample/avatars"
+        app:layout_constraintDimensionRatio="2.5:2"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/qrGen_MID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/qrGen_GenIMG"
+        app:layout_constraintStart_toStartOf="@+id/qrGen_GenIMG"
+        app:layout_constraintTop_toBottomOf="@+id/qrGen_GenIMG"
+        app:layout_constraintVertical_bias="0.07999998"
+        app:layout_constraintWidth_percent="0.95"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Merchant ID" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/qrGen_MSecret"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/qrGen_MID"
+        app:layout_constraintStart_toStartOf="@+id/qrGen_MID"
+        app:layout_constraintTop_toBottomOf="@+id/qrGen_MID"
+        app:layout_constraintVertical_bias="0.060000002"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Merchant Secret" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/qrGen_GenBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Generate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/qrGen_MSecret"
+        app:layout_constraintStart_toStartOf="@+id/qrGen_MSecret"
+        app:layout_constraintTop_toBottomOf="@+id/qrGen_MSecret"
+        app:layout_constraintVertical_bias="0.13999999" />
+
+    <ImageButton
+        android:id="@+id/qrGen_SaveBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        app:tint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/qrGen_GenIMG"
+        app:layout_constraintEnd_toEndOf="@+id/qrGen_GenIMG"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/qrGen_GenIMG"
+        app:layout_constraintTop_toTopOf="@+id/qrGen_GenIMG"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_save"
+        android:visibility="invisible"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

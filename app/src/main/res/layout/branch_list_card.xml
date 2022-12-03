@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    app:cardElevation="20dp"
+    app:cardCornerRadius="20dp"
+
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/card_branch_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/branch_name"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.10"
+            android:maxLines="1"
+
+
+            />
+
+        <TextView
+            android:id="@+id/card_branch_Emaill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Branch Address"
+
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/card_branch_Name"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/card_branch_Name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.43" />
+
+        <TextView
+            android:id="@+id/card_branch_Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/address"
+
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/card_branch_Emaill"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/card_branch_Emaill"
+            app:layout_constraintTop_toBottomOf="@+id/card_branch_Emaill"
+            app:layout_constraintVertical_bias="0.13999999" />
+
+        <ImageButton
+            android:id="@+id/card_branch_EditBtn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#00000000"
+            app:layout_constraintBottom_toTopOf="@+id/card_branch_Emaill"
+            app:layout_constraintDimensionRatio="2:2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.97"
+            app:layout_constraintStart_toEndOf="@+id/card_branch_Name"
+            app:layout_constraintTop_toTopOf="@+id/card_branch_Name"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_settings"
+
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

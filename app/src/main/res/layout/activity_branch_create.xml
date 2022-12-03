@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Company.Branch_Create">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <EditText
+        android:id="@+id/newBranchNameTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/branch_name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037"
+
+        app:layout_constraintWidth_percent="0.85" />
+
+    <EditText
+        android:id="@+id/newBranchLatitudeTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/latitude"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/newBranchCityTxt"
+        app:layout_constraintTop_toBottomOf="@+id/newBranchCityTxt"
+        app:layout_constraintVertical_bias="0.10"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <EditText
+        android:id="@+id/newBranchLongitudeTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/longitude"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/newBranchLatitudeTxt"
+        app:layout_constraintEnd_toEndOf="@+id/newBranchCityTxt"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/newBranchLatitudeTxt"
+        app:layout_constraintTop_toTopOf="@+id/newBranchLatitudeTxt"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <EditText
+        android:id="@+id/newBranchMobileTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/mobile"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/newBranchNameTxt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/newBranchNameTxt"
+        app:layout_constraintTop_toBottomOf="@+id/newBranchNameTxt"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <EditText
+        android:id="@+id/newBranchEmailTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/gmail"
+        android:inputType="textShortMessage|textEmailAddress"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/newBranchMobileTxt"
+        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintStart_toStartOf="@+id/newBranchMobileTxt"
+        app:layout_constraintTop_toBottomOf="@+id/newBranchMobileTxt"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <EditText
+        android:id="@+id/newBranchStNoTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="No"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintWidth_percent="0.85" />
+
+    <EditText
+        android:id="@+id/newBranchStTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/street_address"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/newBranchStNoTxt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/newBranchStNoTxt"
+        app:layout_constraintTop_toBottomOf="@+id/newBranchStNoTxt"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <EditText
+        android:id="@+id/newBranchCityTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/city"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/newBranchStTxt"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/newBranchStTxt"
+        app:layout_constraintTop_toBottomOf="@+id/newBranchStTxt"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/address"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/newBranchEmailTxt"
+        app:layout_constraintTop_toBottomOf="@+id/newBranchEmailTxt"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <EditText
+        android:id="@+id/newBranchPassTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/newBranchLongitudeTxt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/newBranchLatitudeTxt"
+        app:layout_constraintTop_toBottomOf="@+id/newBranchLatitudeTxt"
+
+        app:layout_constraintVertical_bias="0.141" />
+
+    <EditText
+        android:id="@+id/newBranchRePassTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/re_password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/newBranchPassTxt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/newBranchPassTxt"
+        app:layout_constraintTop_toBottomOf="@+id/newBranchPassTxt"
+        app:layout_constraintVertical_bias="0.178" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/blue"
+        android:onClick="createBranch"
+        android:text="Create"
+        android:textColor="@color/pri"
+        app:cornerRadius="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/newBranchRePassTxt"
+        app:layout_constraintStart_toStartOf="@+id/newBranchRePassTxt"
+        app:layout_constraintTop_toBottomOf="@+id/newBranchHaveDelivery"
+        app:layout_constraintVertical_bias="0.90999997" />
+
+    <CheckBox
+        android:id="@+id/newBranchHaveDelivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have Delivery"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/newBranchRePassTxt"
+        app:layout_constraintTop_toBottomOf="@+id/newBranchRePassTxt"
+        app:layout_constraintVertical_bias="0.07999998" />
+
+    <CheckBox
+        android:id="@+id/newBranchHaveBooking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Have Advance order"
+        app:layout_constraintBottom_toBottomOf="@+id/newBranchHaveDelivery"
+        app:layout_constraintEnd_toEndOf="@+id/newBranchRePassTxt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/newBranchHaveDelivery"
+        app:layout_constraintTop_toTopOf="@+id/newBranchHaveDelivery" />
+
+        <ImageView
+            android:id="@+id/newBranchLoc"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="getLocation"
+            app:layout_constraintBottom_toBottomOf="@+id/textView5"
+            app:layout_constraintDimensionRatio="2:2"
+            app:layout_constraintEnd_toEndOf="@+id/newBranchEmailTxt"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textView5"
+            app:layout_constraintTop_toTopOf="@+id/textView5"
+            app:srcCompat="@drawable/ic_location_on" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

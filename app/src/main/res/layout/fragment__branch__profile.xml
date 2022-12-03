@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompanyBraunch.Fragment_Branch_Profile"
+    android:background="#D1D5FA"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/materialCardView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:cardElevation="25dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/profile_top"
+            >
+
+            <TextView
+                android:id="@+id/profile_branchMobile"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="072543142"
+                android:textColor="@color/white"
+                app:autoSizeMaxTextSize="24sp"
+                app:autoSizeMinTextSize="20sp"
+                app:autoSizeStepGranularity="2sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.18"
+                app:layout_constraintStart_toStartOf="@+id/profile_branchEmail"
+                app:layout_constraintTop_toBottomOf="@+id/profile_branchEmail"
+                app:layout_constraintVertical_bias="0.25" />
+
+            <TextView
+                android:id="@+id/profile_branchEmail"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="kfc.nugegoda@gmail.com"
+                android:textColor="@color/white"
+                app:autoSizeMaxTextSize="24sp"
+                app:autoSizeMinTextSize="20sp"
+                app:autoSizeStepGranularity="2sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.18"
+                app:layout_constraintStart_toStartOf="@+id/profile_branchName"
+                app:layout_constraintTop_toBottomOf="@+id/profile_branchName"
+                app:layout_constraintVertical_bias="0.100000024" />
+
+            <TextView
+                android:id="@+id/profile_branchName"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:maxLines="1"
+                android:text="Kentucky fried chicken"
+                android:textColor="@color/white"
+                app:autoSizeMaxTextSize="24sp"
+                app:autoSizeMinTextSize="20sp"
+                app:autoSizeStepGranularity="2sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.18"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_logoutBtn"
+                app:layout_constraintVertical_bias="0.01999998"
+                app:layout_constraintWidth_percent="0.9" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/profile_logoutBtn"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOGOUT"
+                android:textColor="@color/white"
+
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:icon="@drawable/ic_logout"
+                app:iconTint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.01999998" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/profile_updateBtn"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start|center_vertical"
+        android:paddingStart="30sp"
+        android:text="Update Profile"
+        android:textAllCaps="false"
+        android:textColor="?attr/colorOnSecondary"
+        android:textSize="20sp"
+        app:icon="@drawable/ic_profile"
+        app:iconGravity="start"
+        app:iconPadding="20dp"
+        app:iconSize="38sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/profile_changePassBtn"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start|center_vertical"
+        android:paddingStart="30sp"
+        android:text="Change Password"
+        android:textAllCaps="false"
+        android:textColor="?attr/colorOnSecondary"
+        android:textSize="20sp"
+        app:icon="@drawable/ic_password_edit2"
+        app:iconGravity="start"
+        app:iconPadding="20dp"
+        app:iconSize="38sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_updateBtn"
+        app:layout_constraintVertical_bias="0.04000002" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/profile_QRBtn"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start|center_vertical"
+        android:paddingStart="30sp"
+        android:text="Create QR Code"
+        android:textAllCaps="false"
+        android:textColor="?attr/colorOnSecondary"
+        android:textSize="20sp"
+        app:icon="@drawable/ic_qr_code"
+        app:iconGravity="start"
+        app:iconPadding="20dp"
+        app:iconSize="38sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_changePassBtn"
+
+        app:layout_constraintVertical_bias="0.04000002" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/profile_FeedBack"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start|center_vertical"
+        android:paddingStart="30sp"
+        android:text="View Student Feedback"
+        android:textAllCaps="false"
+        android:textColor="?attr/colorOnSecondary"
+        android:textSize="20sp"
+        app:icon="@drawable/ic_feedback"
+        app:iconGravity="start"
+        app:iconPadding="20dp"
+        app:iconSize="38sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_QRBtn"
+        app:layout_constraintVertical_bias="0.04000002" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="lk.choizy.company">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ChoizyAcademic"
+        android:usesCleartextTraffic="true">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Company.CompBranchFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".CompanyBraunch.BranchFeedBack"
+            android:exported="false" />
+        <activity
+            android:name=".Company.ViewBranchDetails"
+            android:exported="false" />
+        <activity android:name=".CompanyBraunch.branchOfferAdd" />
+        <activity android:name=".loginPanel"></activity>
+        <activity android:name=".CompanyBraunch.CompanyBranchDash" />
+        <activity android:name=".Company.RecommendedAdd" />
+        <activity android:name=".Company.CM_ViewFeedback" />
+        <activity android:name=".Company.AdvertisementAdd" />
+        <activity android:name=".Company.Update_Offer" />
+        <activity android:name=".Company.OfferAdd" />
+        <activity android:name=".Company.Branch_Create" />
+        <activity android:name=".Company.Branch_Update" />
+        <activity android:name=".Company.MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
